@@ -6,7 +6,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "script:icon": "cd ./src/scripts && node generateTypeIcon",
-    "build:storybook": "npm run build-storybook -- -o ./docs"
+    "build:storybook": "storybook build -o ./docs"
   },
   "dependencies": {
     "@lit/react": "^1.0.4",
