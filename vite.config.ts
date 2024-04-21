@@ -5,10 +5,10 @@ export default ({ mode }: { mode: never}) => {
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
 
   return defineConfig({
-    base: process.env.VITE_ENVIRONNEMENT === 'prod' ? '/my-storybook' : '',
+    // base: process.env.VITE_ENVIRONNEMENT === 'prod' ? '/my-storybook' : '',
     plugins: [react()],
-    build: {
-      outDir: '../../docs'
-    }
+    // build: {
+    //   outDir: '../../docs'
+    // }
   })
 }
