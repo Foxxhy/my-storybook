@@ -29,13 +29,3 @@ export const Dot: Story = {
         children: 'Lorem Ipsum Factum ...'
     },
 };
-
-export const Shadow: Story = {
-    args: {
-        type: 'shadow',
-        color: 'dark',
-        radius: '8',
-        shadow: undefined,
-        children: 'Lorem Ipsum Factum ...'
-    },
-};

@@ -7,6 +7,7 @@ const meta = {
     tags: ['autodocs'],
     args: {
         type: 'success',
+        outline: false,
         weight: undefined,
         full: false,
         children: 'My Button'
@@ -17,66 +18,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Success: Story = {
+export const Default: Story = {
     args: {
         type: 'success',
         weight: undefined,
+        outline: false,
         full: false,
         children: 'Lorem Ipsum Factum'
     },
 };
 
-export const Info: Story = {
+export const Outline: Story = {
     args: {
-        type: 'info',
+        type: 'success',
         weight: undefined,
+        outline: true,
         full: false,
         children: 'Lorem Ipsum Factum'
     },
 };
-
-export const Warning: Story = {
-    args: {
-        type: 'warning',
-        weight: undefined,
-        full: false,
-        children: 'Lorem Ipsum Factum'
-    },
-};
-
-export const Danger: Story = {
-    args: {
-        type: 'danger',
-        weight: undefined,
-        full: false,
-        children: 'Lorem Ipsum Factum'
-    },
-};
-
-export const Primary: Story = {
-    args: {
-        type: 'primary',
-        weight: undefined,
-        full: false,
-        children: 'Lorem Ipsum Factum'
-    },
-};
-
-export const Secondary: Story = {
-    args: {
-        type: 'secondary',
-        weight: undefined,
-        full: false,
-        children: 'Lorem Ipsum Factum'
-    },
-};
-
-export const Dark: Story = {
-    args: {
-        type: 'dark',
-        weight: undefined,
-        full: false,
-        children: 'Lorem Ipsum Factum'
-    },
-};
-

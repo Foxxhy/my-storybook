@@ -11,7 +11,7 @@
   "dependencies": {
     "@lit/react": "^1.0.4",
     "@storybook/addon-a11y": "^8.0.8",
-    "foxxhy-my-design-system": "^0.0.5",
+    "foxxhy-my-design-system": "^0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

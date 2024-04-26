@@ -14,7 +14,7 @@ export const Separator = ({
     const classCardShadow = `f-separator-${type}`;
 
     return (
-        <section>
+        <section style={{ height: '200px'}} >
             <div className={classCardShadow}> </div>
         </section>
     );

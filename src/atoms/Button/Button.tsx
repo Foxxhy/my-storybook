@@ -9,9 +9,16 @@ interface IButton {
 }
 
 /**
- * - Typography
- * @param props: ITypography
- * @returns - JSX
+ * The Button component is used to start an action. It can be customized to represent different types of buttons.
+ * The Button component accepts the following props:
+ * 
+ * - `type`: Specifies the type of button.
+ * - `weight`: Specifies the weight of the button text. 
+ * - `outline`: A boolean value indicating whether the button should have an outline. Defaults to false.
+ * - `full`: A boolean value indicating whether the button should expand to fill its container's width. Defaults to false.
+ * - `children`: The content to be displayed inside the button.
+ * - 'focus': Add a box-shadow effect onFocus. Default to false.
+ * - 'hover': Add a zoom effect onHover. Default to false.
  */
 export const Button = ({
     type = 'success',
