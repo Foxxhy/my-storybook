@@ -1,7 +1,0 @@
-import{j as a}from"./jsx-runtime-DQ32znRX.js";import"./index-DH5ua8nC.js";import"./_commonjsHelpers-Cpj98o6Y.js";const o=({type:r="default"})=>{const i=`f-elevation-${r}`;return a.jsxs("section",{style:{width:"200px",height:"200px"},children:[a.jsx("div",{className:"f-background-warning f-width-44 f-height-44 f-radius-10 f-absolute f-left-0 f-top-20 f-elevation-side",children:" "}),a.jsx("div",{className:`f-background-info f-width-44 f-height-40 f-radius-10 f-absolute ${i}`,children:" "})]})};o.__docgenInfo={description:`- Typography
-@param props: ITypography
-@returns - JSX`,methods:[],displayName:"Elevation",props:{type:{required:!1,tsType:{name:"union",raw:"'default' | 'cover' | 'side' | 'modal' | 'dialog' | 'toast'",elements:[{name:"literal",value:"'default'"},{name:"literal",value:"'cover'"},{name:"literal",value:"'side'"},{name:"literal",value:"'modal'"},{name:"literal",value:"'dialog'"},{name:"literal",value:"'toast'"}]},description:"",defaultValue:{value:"'default'",computed:!1}}}};const p={title:"Utilities/Elevation",component:o,tags:["autodocs"],args:{type:"default"}},e={args:{type:"default"}};var t,l,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
-  args: {
-    type: 'default'
-  }
-}`,...(s=(l=e.parameters)==null?void 0:l.docs)==null?void 0:s.source}}};const f=["All"];export{e as All,f as __namedExportsOrder,p as default};
