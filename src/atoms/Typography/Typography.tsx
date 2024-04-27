@@ -7,9 +7,16 @@ interface ITypography {
 }
 
 /**
- * Atom - Typography
- * @param props: ITypography
- * @returns - JSX
+ * ### CSS component
+ * - The Link component is used to urls actions.
+ * The Link component accepts the following props:
+ * 
+ * 
+ * - `font` : Specifies the font-family
+ * - `weight` : Specifies the font-weight
+ * - `style` : Specifies if the Link should be styled
+ * - `transform` : Specifies if the content is formated
+ * - `children`: The content to be displayed inside the Link.
  */
 export const Typography = (props: ITypography) => {
     const {

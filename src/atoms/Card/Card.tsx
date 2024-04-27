@@ -7,7 +7,8 @@ interface ICard {
 }
 
 /**
- * The Card component is used to display block of information. It can be customized to represent different types of cards.
+ * ### CSS component
+ * - The Card component is used to display block of information. It can be customized to represent different types of cards.
  * The Card component accepts the following props:
  * 
  * - `type`: Specifies the type of the card.

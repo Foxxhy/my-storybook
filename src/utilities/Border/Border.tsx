@@ -5,11 +5,15 @@ interface IBorder {
 }
 
 /**
- * - Typography
- * @param props: ITypography
- * @returns - JSX
+/**
+ * ### CSS utilities
+ * - The Background is a utility class
+ * 
+ * - `type` : Specifies the background-color
+ * - `direction` : Specifies the direction of the border
+ * - `children`: The content to be displayed inside the button.
  */
-export const Color = ({
+export const Border = ({
     type = 'blue',
     direction='unset',
     children

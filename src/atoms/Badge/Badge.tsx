@@ -7,7 +7,8 @@ interface IBadge {
 }
 
 /**
- * The Badge component is used to display a small piece of information, typically containing a status, number, or icon. It can be customized to represent different types of badges.
+ * ### CSS component
+ * - The Badge component is used to display a small piece of information, typically containing a status, number, or icon. It can be customized to represent different types of badges.
  * The Badge component accepts the following props:
  * 
  * - `type`: Specifies the type of badge.

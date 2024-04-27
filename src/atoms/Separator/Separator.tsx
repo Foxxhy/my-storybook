@@ -3,9 +3,11 @@ interface ISeparator {
 }
 
 /**
- * - CardShadow
- * @param props: ITypography
- * @returns - JSX
+ * ### CSS component
+ * - The Separator component is used to display a line to seperate information.
+ * The Separator component accepts the following props:
+ * 
+ * - `type`: Specifies the direction of the separator
  */
 export const Separator = ({
     type,

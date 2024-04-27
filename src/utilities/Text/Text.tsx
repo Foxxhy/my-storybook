@@ -1,4 +1,4 @@
-interface ILink {
+interface IText {
     font?: 'primary' | 'secondary' | 'unset',
     size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl' | 'unset'
     weight?: 'thin' | '100' | '200' | '300' | '400' | '500 ' | 'normal' | '600' | 'bold' | '700' | '800' | 'bolder' | '900' | 'unset',
@@ -6,25 +6,25 @@ interface ILink {
     style?: 'underline' | 'italic' | 'through' | 'unset',
     transform?: 'capitalize' | 'uppercase' | 'lowercase' | 'unset',
     cursor?: 'pointer' | 'unset',
-    target?: 'self' | 'blank' | 'top' | 'parent' | 'unset',
+    align?: 'start' | 'center' | 'end' | 'justify' | 'unset',
     children: React.ReactNode,
 }
 
 /**
- * ### CSS component
- * - The Link component is used to urls actions.
- * The Link component accepts the following props:
- * 
+ * ### CSS composable
+ * - The Text component is to have customize texts
+ * The Text component accepts the following props:
  * 
  * - `font` : Specifies the font-family
  * - `size` : Specifies the font size
  * - `weight` : Specifies the font-weight
  * - `color` : Specifies the color
- * - `style` : Specifies if the Link should be styled
+ * - `style` : Specifies if the Text should be styled
  * - `transform` : Specifies if the content is formated
- * - `children`: The content to be displayed inside the Link.
+ * - `align`: The content to be align inside the Text.
+ * - `children`: The content to be displayed inside the Text.
  */
-export const Link = (props: ILink) => {
+export const Text = (props: IText) => {
     const {
         font,
         size,
@@ -33,7 +33,6 @@ export const Link = (props: ILink) => {
         style,
         transform,
         cursor,
-        target,
         children
     } = props;
 
@@ -44,11 +43,10 @@ export const Link = (props: ILink) => {
     const classStyle = (style && style !== 'unset') ? ` f-style-${style}` : '';
     const classTransform = (transform && transform !== 'unset') ? ` f-transform-${transform}` : '';
     const classCursor = (cursor && cursor !== 'unset') ? ` f-style-${cursor}` : '';
-    const htmlTarget = (target && target !== 'unset') ? `_${target}` : '';
 
     return (
-        <a className={classFont + classSize + classWeight + classColor + classStyle + classTransform + classCursor} href="http://localhost:6006" target={htmlTarget} >
+        <p className={classFont + classSize + classWeight + classColor + classStyle + classTransform + classCursor}>
             {children || 'Lorem Ipsum Factum'}
-        </a>
+        </p>
     );
 };

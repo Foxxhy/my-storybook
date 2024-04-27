@@ -9,7 +9,8 @@ interface IButton {
 }
 
 /**
- * The Button component is used to start an action. It can be customized to represent different types of buttons.
+ * ### CSS component
+ * - The Button component is used to start an action. It can be customized to represent different types of buttons.
  * The Button component accepts the following props:
  * 
  * - `type`: Specifies the type of button.

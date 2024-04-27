@@ -1,57 +1,47 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Border } from './Border';
+import { Padding } from './Padding';
 
 const meta = {
-    title: 'Utilities/Border',
-    component: Border,
+    title: 'Utilities/Padding',
+    component: Padding,
     tags: ['autodocs'],
-    args: {
-        type: 'dark',
-        direction: 'unset',
-        children: 'Lorem Ipsum Factum'
-    },
 
-} satisfies Meta<typeof Border>;
+} satisfies Meta<typeof Padding>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Unset: Story = {
     args: {
-        type: 'dark',
         direction: 'unset',
-        children: 'Lorem Ipsum Factum'
+        size: 16,
     },
 };
 
 export const Top: Story = {
     args: {
-        type: 'dark',
         direction: 'top',
-        children: 'Lorem Ipsum Factum'
+        size: 16,
     },
 };
 
 export const Left: Story = {
     args: {
-        type: 'dark',
         direction: 'left',
-        children: 'Lorem Ipsum Factum'
+        size: 16,
     },
 };
 
 export const Right: Story = {
     args: {
-        type: 'dark',
         direction: 'right',
-        children: 'Lorem Ipsum Factum'
+        size: 16,
     },
 };
 
 export const Bottom: Story = {
     args: {
-        type: 'dark',
         direction: 'bottom',
-        children: 'Lorem Ipsum Factum'
+        size: 16,
     },
 };

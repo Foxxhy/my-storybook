@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Link } from './Link';
+import { Text } from './Text';
 
 const meta = {
-    title: 'Atoms/Link',
-    component: Link,
+    title: 'Utilities/Text',
+    component: Text,
     tags: ['autodocs'],
-} satisfies Meta<typeof Link>;
+} satisfies Meta<typeof Text>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -19,7 +19,7 @@ export const Custom: Story = {
         style: 'underline',
         transform: undefined,
         cursor: undefined,
-        target: 'self',
+        align: 'unset',
         children: 'my link',
     },
 };

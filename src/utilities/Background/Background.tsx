@@ -3,9 +3,10 @@ interface IButton {
 }
 
 /**
- * - Typography
- * @param props: ITypography
- * @returns - JSX
+ * ### CSS utilities
+ * - The Background is a utility class
+ * 
+ * - `type` : Specifies the background-color
  */
 export const Background = ({
     type = 'blue',

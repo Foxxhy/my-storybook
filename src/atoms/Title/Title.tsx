@@ -6,9 +6,15 @@ interface ITitle {
 }
 
 /**
- * Atom - Typography
- * @param props: ITypography
- * @returns - JSX
+ * ### CSS component
+ * - The Title component is used to urls actions.
+ * The Title component accepts the following props:
+ * 
+ * 
+ * - `font` : Specifies the type of Title
+ * - `style` : Specifies if the Title should be styled
+ * - `transform` : Specifies if the content is formated
+ * - `children`: The content to be displayed inside the Title.
  */
 export const Title = (props: ITitle) => {
     const {
